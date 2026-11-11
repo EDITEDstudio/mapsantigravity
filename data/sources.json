@@ -1,0 +1,23 @@
+[
+  {
+    "name": "countries",
+    "url": "https://naciscdn.org/naturalearth/10m/cultural/ne_10m_admin_0_countries.zip",
+    "license": "Public Domain",
+    "retrieved": "2026-11-11T16:42:09.612662+00:00",
+    "sha256": "ce1ac7036499a0edd641fbc093cd209a98f96a49d2eca8480aaacad35138a7f6"
+  },
+  {
+    "name": "provinces",
+    "url": "https://naciscdn.org/naturalearth/10m/cultural/ne_10m_admin_1_states_provinces.zip",
+    "license": "Public Domain",
+    "retrieved": "2026-11-11T16:42:22.060608+00:00",
+    "sha256": "efc59726337323058f9446210adc96673179cd344e053666ee3d28cb58ba2b05"
+  },
+  {
+    "name": "terrain",
+    "url": "https://naciscdn.org/naturalearth/10m/raster/NE1_LR_LC_SR.zip",
+    "license": "Public Domain",
+    "retrieved": "2026-11-11T16:44:18.652858+00:00",
+    "sha256": "5a1e36c9944fd2866e812f7756a6c96d59afa7bc176360b1689dc232aecc169b"
+  }
+]

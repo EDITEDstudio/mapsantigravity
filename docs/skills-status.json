@@ -1,0 +1,15 @@
+{
+  "installation": "project-local .agents/skills",
+  "skills": [
+    "thai-neural-tts",
+    "map-motion",
+    "thai-voice",
+    "map-content-strategy",
+    "map-data",
+    "video-finish"
+  ],
+  "voice": "Original thai-neural-tts Niwat tested successfully",
+  "demo": "exports/DEMO_\u0e40\u0e0a\u0e35\u0e22\u0e07\u0e43\u0e2b\u0e21\u0e48_\u0e40\u0e2a\u0e35\u0e22\u0e07\u0e08\u0e32\u0e01Skill\u0e40\u0e14\u0e34\u0e21.mp4",
+  "antigravity": "Shared workspace configured; actual agent execution blocked by insufficient AI credits, retryable 429",
+  "logo": "Five concepts prepared; final artwork pending user choice"
+}

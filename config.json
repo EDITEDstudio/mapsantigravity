@@ -1,0 +1,12 @@
+{
+  "voice_id": "aIO43jUTZkFqZmvgYDvA",
+  "voice_name": "WASABI Thai Storyteller",
+  "model_id": "eleven_v3",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "default_voice_engine": "edge-tts",
+  "default_voice": "th-TH-NiwatNeural",
+  "voice_rate": "+3%",
+  "elevenlabs_optional": true
+}

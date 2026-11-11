@@ -1,0 +1,41 @@
+{
+  "duration": 8.280000000000001,
+  "title": "เชียงใหม่",
+  "subtitle": "",
+  "camera_start": [
+    93,
+    0,
+    112,
+    26
+  ],
+  "camera_end": [
+    96,
+    4,
+    109,
+    22
+  ],
+  "highlight": "THA",
+  "route": [],
+  "labels": [],
+  "province": "Chiang Mai",
+  "zoom_start": 0.15,
+  "zoom_duration": 1.8519999999999999,
+  "lift_start": 1.652,
+  "subtitles": [
+    {
+      "start": 0.0,
+      "end": 2.352,
+      "text": "ลองซูมเข้าไปที่เชียงใหม่"
+    },
+    {
+      "start": 2.472,
+      "end": 4.68,
+      "text": "แล้วดูว่า ภูมิประเทศ"
+    },
+    {
+      "start": 4.8,
+      "end": 7.656,
+      "text": "เชื่อมโยงกับเศรษฐกิจของเมืองนี้อย่างไร"
+    }
+  ]
+}

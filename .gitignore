@@ -1,0 +1,11 @@
+.venv/
+.env
+__pycache__/
+data/raw/
+data/processed/
+exports/
+audio/
+*.log
+.DS_Store
+tools/agy
+tools/install-antigravity-cli.sh
