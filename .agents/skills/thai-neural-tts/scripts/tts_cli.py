@@ -157,11 +157,21 @@ async def synthesize_dialogue(dialogue_json_path: str, output_path: str, timing_
     with open(dialogue_json_path, "r", encoding="utf-8") as f:
         data = json.load(f)
 
-    turns = data.get("turns", data if isinstance(data, list) else [])
-    sr = 44100
-    tail_silence_sec = data.get("pauseBetweenTurns", 0.30)
-    tail_samples = int(sr * tail_silence_sec)
+    if isinstance(data, list):
+        turns = data
+        meta = {}
+    else:
+        turns = data.get("turns") or data.get("segments") or []
+        meta = data
+    if not turns:
+        raise ValueError(f"No 'turns' or 'segments' found in {dialogue_json_path}")
 
+    default_voice = meta.get("voice", "th-TH-NiwatNeural")
+    default_rate = meta.get("rate", "+0%")
+    default_pitch = meta.get("pitch", "+0Hz")
+    default_pause_sec = float(meta.get("pauseBetweenTurns", 0.30))
+
+    sr = 44100
     pcm_segments = []
     turn_timings = []
     cur_samples = 0
@@ -169,10 +179,16 @@ async def synthesize_dialogue(dialogue_json_path: str, output_path: str, timing_
     with tempfile.TemporaryDirectory() as tmpdir:
         for idx, turn in enumerate(turns):
             speaker = turn.get("speaker", "Speaker")
-            voice_id = resolve_voice(turn.get("voice", "th-TH-NiwatNeural"))
-            rate = turn.get("rate", "+0%")
-            pitch = turn.get("pitch", "+0Hz")
+            voice_id = resolve_voice(turn.get("voice", default_voice))
+            rate = turn.get("rate", default_rate)
+            pitch = turn.get("pitch", default_pitch)
             text = turn.get("text", "")
+            pause_sec = (
+                float(turn["pauseAfterMs"]) / 1000.0
+                if "pauseAfterMs" in turn and turn["pauseAfterMs"] is not None
+                else default_pause_sec
+            )
+            tail_samples = max(0, int(round(sr * pause_sec)))
 
             tmp_mp3 = os.path.join(tmpdir, f"turn_{idx}.mp3")
             await _safe_communicate_save(
@@ -195,7 +211,8 @@ async def synthesize_dialogue(dialogue_json_path: str, output_path: str, timing_
             s0 = cur_samples
             s1 = s0 + len(arr)
             pcm_segments.append(arr)
-            pcm_segments.append(np.zeros(tail_samples, dtype=np.int16))
+            if tail_samples > 0:
+                pcm_segments.append(np.zeros(tail_samples, dtype=np.int16))
             cur_samples = s1 + tail_samples
 
             turn_info = dict(turn)
@@ -226,9 +243,10 @@ async def synthesize_dialogue(dialogue_json_path: str, output_path: str, timing_
         print(f"Generated Dialogue Audio ({total_dur:.2f}s) -> {output_path}")
 
         if timing_output:
+            os.makedirs(os.path.dirname(os.path.abspath(timing_output)), exist_ok=True)
             for t in turn_timings:
-                t["startRatio"] = round(t["startSec"] / total_dur, 4)
-                t["endRatio"] = round(t["endSec"] / total_dur, 4)
+                t["startRatio"] = round(t["startSec"] / total_dur, 4) if total_dur > 0 else 0.0
+                t["endRatio"] = round(t["endSec"] / total_dur, 4) if total_dur > 0 else 0.0
             with open(timing_output, "w", encoding="utf-8") as f:
                 json.dump({"durationSec": total_dur, "turns": turn_timings}, f, ensure_ascii=False, indent=2)
             print(f"Saved Timing Metadata -> {timing_output}")

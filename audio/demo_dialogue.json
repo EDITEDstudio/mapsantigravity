@@ -1,0 +1,23 @@
+{
+  "pauseBetweenTurns": 0.12,
+  "turns": [
+    {
+      "speaker": "Narrator",
+      "voice": "niwat",
+      "rate": "+3%",
+      "text": "ลองซูมเข้าไปที่เชียงใหม่"
+    },
+    {
+      "speaker": "Narrator",
+      "voice": "niwat",
+      "rate": "+3%",
+      "text": "แล้วดูว่า ภูมิประเทศ"
+    },
+    {
+      "speaker": "Narrator",
+      "voice": "niwat",
+      "rate": "+3%",
+      "text": "เชื่อมโยงกับเศรษฐกิจของเมืองนี้อย่างไร"
+    }
+  ]
+}

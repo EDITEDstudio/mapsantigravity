@@ -4,7 +4,9 @@ __pycache__/
 data/raw/
 data/processed/
 exports/
-audio/
+audio/*.mp3
+audio/*.wav
+audio/*_timing.json
 *.log
 .DS_Store
 tools/agy
