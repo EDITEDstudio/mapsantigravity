@@ -9,3 +9,5 @@ audio/
 .DS_Store
 tools/agy
 tools/install-antigravity-cli.sh
+work/
+

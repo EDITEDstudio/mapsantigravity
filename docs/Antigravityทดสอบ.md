@@ -1,6 +1,6 @@
-# การใช้โฟลเดอร์เดียวกัน
-โฟลเดอร์หลัก: /Users/macintosh/Desktop/คลิปแผนที่
-เปิด คลิปแผนที่.code-workspace ใน Antigravity IDE หรือเปิดโฟลเดอร์นี้ใน Codex
+# โฟลเดอร์สำหรับ Antigravity
+โฟลเดอร์หลัก: /Users/macintosh/Desktop/คลิปแผนที่-antigravity
+เปิด คลิปแผนที่-antigravity.code-workspace ใน Antigravity IDE (แยกอิสระจากโฟลเดอร์ของ Codex)
 Skills จริงอยู่ .agents/skills และมี .agent/skills เป็นลิงก์รองรับรุ่นเก่า
 GEMINI.md อ้างไฟล์ AGENTS.md เดียวกัน ไม่มีสำเนาคำสั่งแยกที่อาจล้าสมัย
 เอกสารผู้ผลิต: https://antigravity.google/docs/skills

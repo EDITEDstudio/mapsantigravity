@@ -19,5 +19,61 @@
     "license": "Public Domain",
     "retrieved": "2026-11-11T16:44:18.652858+00:00",
     "sha256": "5a1e36c9944fd2866e812f7756a6c96d59afa7bc176360b1689dc232aecc169b"
+  },
+  {
+    "name": "nesdc_gdp_gpp",
+    "url": "https://www.nesdc.go.th/main.php?filename=gross_regional",
+    "title": "รายงานผลิตภัณฑ์มวลรวมในประเทศและรายจังหวัด (GDP & GPP)",
+    "publisher": "สำนักงานสภาพัฒนาการเศรษฐกิจและสังคมแห่งชาติ (สภาพัฒน์)",
+    "license": "Open Government Data Thailand",
+    "retrieved": "2026-11-12T01:10:00+00:00"
+  },
+  {
+    "name": "mof_net_revenue",
+    "url": "https://www.mof.go.th/",
+    "title": "รายงานผลการจัดเก็บรายได้รัฐบาลสุทธิประจำปีงบประมาณ",
+    "publisher": "กระทรวงการคลัง (Ministry of Finance)",
+    "license": "Open Government Data Thailand",
+    "retrieved": "2026-11-12T01:10:00+00:00"
+  },
+  {
+    "name": "klook_skyscanner_thai_outbound_travel",
+    "url": "https://www.klook.com/",
+    "title": "Klook Travel Pulse & Skyscanner Thai Outbound Destination Trends (2025-2026)",
+    "publisher": "Klook / Skyscanner",
+    "license": "Public Summary Data",
+    "retrieved": "2026-11-13T06:11:00+00:00"
+  },
+  {
+    "name": "bot_fx_rates_2026",
+    "url": "https://www.bot.or.th/th/statistics/exchange-rate.html",
+    "title": "อัตราแลกเปลี่ยนถัวเฉลี่ยเงินตราต่างประเทศประจำวัน (CHF, VND, TWD, CNY, JPY)",
+    "publisher": "ธนาคารแห่งประเทศไทย (Bank of Thailand)",
+    "license": "Open Government Data Thailand",
+    "retrieved": "2026-11-13T06:11:00+00:00"
+  },
+  {
+    "name": "flightconnections_aircanada_bkk_yvr",
+    "url": "https://www.flightconnections.com/flights-from-bangkok-bkk",
+    "title": "Non-stop & Long-Haul Flight Schedules from Bangkok Suvarnabhumi (BKK)",
+    "publisher": "FlightConnections / Air Canada / FlightQ",
+    "license": "Public Schedule Reference",
+    "retrieved": "2026-11-13T09:07:00+00:00"
+  },
+  {
+    "name": "rome2rio_skyscanner_south_america_flights",
+    "url": "https://www.skyscanner.co.th/",
+    "title": "Bangkok (BKK) to South America Flight Durations & Round-Trip Estimates (2025-2026)",
+    "publisher": "Skyscanner / Rome2Rio / Expedia",
+    "license": "Public Summary Data",
+    "retrieved": "2026-11-13T09:08:00+00:00"
+  },
+  {
+    "name": "antipodes_great_circle_wgs84",
+    "url": "https://www.futilitycloset.com/",
+    "title": "WGS84 Great-Circle Distance & Bangkok–Lima Antipodal Geography",
+    "publisher": "WGS84 Geodetic Calculation & Geographic Reference",
+    "license": "Public Domain / Computed",
+    "retrieved": "2026-11-13T09:07:00+00:00"
   }
 ]

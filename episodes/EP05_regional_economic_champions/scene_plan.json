@@ -1,0 +1,47 @@
+{
+  "episode": "EP05",
+  "resolution": [2160, 3840],
+  "fps": 60,
+  "default_duration_sec": 88.0,
+  "camera_waypoints": [
+    { "time": 0.0,  "cx": 100.5, "cy": 15.0, "span": 60.0, "desc": "แผนที่ประเทศไทย กทม. จางหาย ตัดออก" },
+    { "time": 5.0,  "cx": 101.2, "cy": 13.0, "span": 3.2,  "desc": "ซูมเจาะคู่ชิงภาคตะวันออก: ชลบุรี vs ระยอง" },
+    { "time": 26.0, "cx": 102.4, "cy": 15.8, "span": 5.0,  "desc": "กวาดขึ้นคู่ชิงภาคอีสาน: โคราช vs ขอนแก่น" },
+    { "time": 48.0, "cx": 99.0,  "cy": 18.6, "span": 3.8,  "desc": "สวิงขึ้นคู่ชิงภาคเหนือ: เชียงใหม่ vs ลำพูน" },
+    { "time": 70.0, "cx": 100.2, "cy": 8.5,  "span": 5.5,  "desc": "แพนลงคู่ชิงภาคใต้: สงขลา vs สุราษฎร์ธานี" },
+    { "time": 84.0, "cx": 100.5, "cy": 14.5, "span": 55.0, "desc": "ซูมถอยกว้างโหวตเบอร์ 1 ของแต่ละภาค" }
+  ],
+  "provinces_involved": [
+    { "name": "Chon Buri", "highlight": "#ffd44d", "lift": true },
+    { "name": "Rayong", "highlight": "#58d5b5", "lift": true },
+    { "name": "Nakhon Ratchasima", "highlight": "#ffd44d", "lift": true },
+    { "name": "Khon Kaen", "highlight": "#58d5b5", "lift": true },
+    { "name": "Chiang Mai", "highlight": "#ffd44d", "lift": true },
+    { "name": "Lamphun", "highlight": "#58d5b5", "lift": true },
+    { "name": "Songkhla", "highlight": "#ffd44d", "lift": true },
+    { "name": "Surat Thani", "highlight": "#58d5b5", "lift": true }
+  ],
+  "odometer_counters": [
+    {
+      "trigger_time": 7.0,
+      "label": "ชลบุรี • ขนาดเศรษฐกิจ (GDP)",
+      "target_value": 1.1,
+      "format": "{val:.1f} ล้านล้านบาท",
+      "sub": "อันดับ 1 ของภูมิภาคตะวันออก"
+    },
+    {
+      "trigger_time": 15.0,
+      "label": "ระยอง • รายได้ต่อหัวเฉลี่ย",
+      "target_value": 1040000,
+      "format": "{val:,} บาท/คน/ปี",
+      "sub": "อันดับ 1 ของประเทศไทย (ปิโตรเคมี)"
+    },
+    {
+      "trigger_time": 28.0,
+      "label": "นครราชสีมา • GDP สูงสุดในอีสาน",
+      "target_value": 320000,
+      "format": "{val:,} ล้านบาท",
+      "sub": "ประตูสู่อีสาน • อุตสาหกรรมและเกษตรแปรรูป"
+    }
+  ]
+}

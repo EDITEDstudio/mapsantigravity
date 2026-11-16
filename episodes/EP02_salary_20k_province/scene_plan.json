@@ -1,0 +1,50 @@
+{
+  "episode": "EP02",
+  "resolution": [2160, 3840],
+  "fps": 60,
+  "default_duration_sec": 88.0,
+  "camera_waypoints": [
+    { "time": 0.0,  "cx": 100.5, "cy": 15.0,  "span": 65.0, "desc": "มุมมองประเทศไทย 4 ภาค" },
+    { "time": 4.5,  "cx": 100.5, "cy": 13.75, "span": 2.2,  "desc": "ซูมเจาะกรุงเทพมหานคร" },
+    { "time": 22.0, "cx": 100.98,"cy": 13.36, "span": 2.8,  "desc": "แพนข้ามอ่าวไทยไปชลบุรี" },
+    { "time": 42.0, "cx": 102.83,"cy": 16.43, "span": 3.5,  "desc": "กวาดกล้องขึ้นสู่ขอนแก่น" },
+    { "time": 64.0, "cx": 98.98, "cy": 18.79, "span": 3.2,  "desc": "สวิงกล้องไปเชียงใหม่" },
+    { "time": 82.0, "cx": 101.0, "cy": 15.0,  "span": 45.0, "desc": "ซูมถอยสรุป 4 พิกัดทั่วประเทศ" }
+  ],
+  "provinces_involved": [
+    { "name": "Bangkok Metropolis", "highlight": "#ffd44d", "lift": true },
+    { "name": "Chon Buri", "highlight": "#58d5b5", "lift": true },
+    { "name": "Khon Kaen", "highlight": "#58d5b5", "lift": true },
+    { "name": "Chiang Mai", "highlight": "#ffd44d", "lift": true }
+  ],
+  "odometer_counters": [
+    {
+      "trigger_time": 6.0,
+      "label": "กรุงเทพฯ • เงินเหลือเก็บสุทธิ",
+      "target_value": 5700,
+      "format": "{val:,} บาท/เดือน",
+      "sub": "หักค่าห้อง 5,500 บ. • เดินทาง 2,800 บ. • ค่ากิน 6,000 บ."
+    },
+    {
+      "trigger_time": 24.0,
+      "label": "ชลบุรี • เงินเหลือเก็บสุทธิ",
+      "target_value": 9900,
+      "format": "{val:,} บาท/เดือน",
+      "sub": "หักค่าห้อง 3,800 บ. • รถรับส่ง 800 บ. • ค่ากิน 5,500 บ."
+    },
+    {
+      "trigger_time": 44.0,
+      "label": "ขอนแก่น • เงินเหลือเก็บสุทธิ",
+      "target_value": 11300,
+      "format": "{val:,} บาท/เดือน",
+      "sub": "หักค่าห้อง 3,000 บ. • มอเตอร์ไซค์ 1,200 บ. • ค่ากิน 4,500 บ."
+    },
+    {
+      "trigger_time": 66.0,
+      "label": "เชียงใหม่ • เงินเหลือเก็บสุทธิ",
+      "target_value": 8600,
+      "format": "{val:,} บาท/เดือน",
+      "sub": "หักค่าห้อง 4,200 บ. • ค่าเดินทาง 2,000 บ. • ค่ากิน 5,200 บ."
+    }
+  ]
+}

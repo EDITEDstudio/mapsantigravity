@@ -1,0 +1,68 @@
+{
+  "episode": "EP06",
+  "title": "5 อันดับประเทศที่คนไทยอยากไปเที่ยวมากที่สุด",
+  "aspectRatio": "9:16",
+  "fps": 60,
+  "countries": [
+    {
+      "rank": 5,
+      "adm0_a3": "CHE",
+      "nameTh": "สวิตเซอร์แลนด์",
+      "tag": "อันดับ 5 • ในฝันยุโรป",
+      "center": [8.21, 46.81],
+      "flightRangeTh": "25,000 - 45,000 บาท",
+      "currencyNameTh": "ฟรังก์สวิส (CHF)",
+      "fxTextTh": "1 CHF ≈ 40.50 บาท",
+      "fxValueThb": 40.50,
+      "edgeColor": "#ff7b7b"
+    },
+    {
+      "rank": 4,
+      "adm0_a3": "VNM",
+      "nameTh": "เวียดนาม",
+      "tag": "อันดับ 4 • ใกล้คุ้มสุด",
+      "center": [105.80, 15.97],
+      "flightRangeTh": "3,500 - 7,000 บาท",
+      "currencyNameTh": "ดองเวียดนาม (VND)",
+      "fxTextTh": "100 VND ≈ 0.14 บาท",
+      "fxValueThb": 0.14,
+      "edgeColor": "#ffd44d"
+    },
+    {
+      "rank": 3,
+      "adm0_a3": "TWN",
+      "nameTh": "ไต้หวัน",
+      "tag": "อันดับ 3 • ฟรีวีซ่าฮิต",
+      "center": [121.03, 23.60],
+      "flightRangeTh": "6,000 - 11,000 บาท",
+      "currencyNameTh": "ดอลลาร์ไต้หวัน (TWD)",
+      "fxTextTh": "1 TWD ≈ 1.05 บาท",
+      "fxValueThb": 1.05,
+      "edgeColor": "#63b3ed"
+    },
+    {
+      "rank": 2,
+      "adm0_a3": "CHN",
+      "nameTh": "จีน",
+      "tag": "อันดับ 2 • ฟรีวีซ่ามาแรง",
+      "center": [104.19, 36.90],
+      "flightRangeTh": "7,000 - 14,000 บาท",
+      "currencyNameTh": "หยวนจีน (CNY)",
+      "fxTextTh": "1 CNY ≈ 5.05 บาท",
+      "fxValueThb": 5.05,
+      "edgeColor": "#ffd44d"
+    },
+    {
+      "rank": 1,
+      "adm0_a3": "JPN",
+      "nameTh": "ญี่ปุ่น",
+      "tag": "อันดับ 1 • ขวัญใจตลอดกาล",
+      "center": [138.35, 36.35],
+      "flightRangeTh": "11,000 - 22,000 บาท",
+      "currencyNameTh": "เยนญี่ปุ่น (JPY)",
+      "fxTextTh": "100 JPY ≈ 21.30 บาท",
+      "fxValueThb": 21.30,
+      "edgeColor": "#ff6b81"
+    }
+  ]
+}

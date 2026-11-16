@@ -1,0 +1,73 @@
+{
+  "episode": "EP07",
+  "title": "5 อันดับประเทศที่บินจากไทยนานที่สุด!",
+  "aspectRatio": "9:16",
+  "fps": 60,
+  "countries": [
+    {
+      "rank": 5,
+      "adm0_a3": "CAN",
+      "nameTh": "แคนาดา",
+      "tag": "อันดับ 5 • แชมป์บินตรงนานสุด",
+      "center": [-96.5, 56.0],
+      "flightHours": "13.5 - 15.5 ชม.",
+      "flightHoursTarget": 15.5,
+      "flightNote": "บินตรงไม่แวะพัก (YVR)",
+      "distanceKm": 11799,
+      "ticketRange": "32,000 - 52,000 บ.",
+      "edgeColor": "#ff6b6b"
+    },
+    {
+      "rank": 4,
+      "adm0_a3": "BRA",
+      "nameTh": "บราซิล",
+      "tag": "อันดับ 4 • ประตูสู่อเมริกาใต้",
+      "center": [-54.4, -14.2],
+      "flightHours": "24 - 28 ชม.",
+      "flightHoursTarget": 28.0,
+      "flightNote": "ต่อเครื่อง 1-2 ต่อ (GRU)",
+      "distanceKm": 16418,
+      "ticketRange": "48,000 - 75,000 บ.",
+      "edgeColor": "#58d5b5"
+    },
+    {
+      "rank": 3,
+      "adm0_a3": "ARG",
+      "nameTh": "อาร์เจนตินา",
+      "tag": "อันดับ 3 • เวลาต่างไทย -10 ชม.",
+      "center": [-63.6, -37.1],
+      "flightHours": "26 - 32 ชม.",
+      "flightHoursTarget": 32.0,
+      "flightNote": "ต่อเครื่องข้ามแอตแลนติก (EZE)",
+      "distanceKm": 16884,
+      "ticketRange": "52,000 - 80,000 บ.",
+      "edgeColor": "#63b3ed"
+    },
+    {
+      "rank": 2,
+      "adm0_a3": "CHL",
+      "nameTh": "ชิลี",
+      "tag": "อันดับ 2 • ริมเทือกเขาแอนดีส",
+      "center": [-71.3, -35.7],
+      "flightHours": "26 - 35 ชม.",
+      "flightHoursTarget": 35.0,
+      "flightNote": "ต่อเครื่อง 1-2 ต่อ (SCL)",
+      "distanceKm": 17653,
+      "ticketRange": "55,000 - 85,000 บ.",
+      "edgeColor": "#ff8a8a"
+    },
+    {
+      "rank": 1,
+      "adm0_a3": "PER",
+      "nameTh": "เปรู",
+      "tag": "อันดับ 1 • ตรงข้ามขั้วโลกของไทย!",
+      "center": [-75.0, -9.2],
+      "flightHours": "28 - 37 ชม.",
+      "flightHoursTarget": 37.0,
+      "flightNote": "Antipodes ของไทย (LIM)",
+      "distanceKm": 19714,
+      "ticketRange": "55,000 - 90,000 บ.",
+      "edgeColor": "#ffd44d"
+    }
+  ]
+}
