@@ -14,7 +14,7 @@ python3 scripts/bootstrap_env.py
 1. สร้าง `.venv/` และติดตั้งแพ็กเกจจาก `requirements-lock.txt` (รวม `imageio-ffmpeg` ที่ให้ binary `ffmpeg` โดยไม่ต้องลง `ffmpeg` บน `PATH` ส่วนกลาง)
 2. ดาวน์โหลดแผนที่ Natural Earth 10m ผ่าน `scripts/map_video.py fetch` และสร้าง `data/processed/countries.geojson`, `data/processed/thailand_provinces.geojson`
 3. สร้าง `data/processed/world_countries.geojson` (258 ประเทศ) สำหรับสคริปต์ระดับโลก
-4. สร้างภาพแคชภูมิประเทศใน `work/` (`cached_terrain.png`, `cached_world_terrain.png`, `cached_world_terrain_blue_ocean.png`, `cached_world_terrain_16k_landbleed.png`)
+4. สร้างภาพแคชภูมิประเทศใน `work/` (`cached_terrain.png`, `cached_world_terrain_blue_ocean.png`, `cached_world_terrain_16k_landbleed.png`)
 5. สังเคราะห์เสียงพากย์ `th-TH-NiwatNeural` (`*_voice.mp3`) และไฟล์จังหวะ (`*_timing.json`) ใน `audio/` จากไฟล์ `*_dialogue.json` ที่มีอยู่ในรีโป (ข้ามขั้นนี้ได้ด้วย `--skip-audio` หรือตรวจความพร้อมด้วย `--check-only`)
 
 ## สถานะสคริปต์ตอน

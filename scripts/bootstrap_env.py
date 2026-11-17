@@ -126,11 +126,10 @@ def _rasterize_land_mask(size: tuple[int, int], shp_path: Path):
 
 def build_terrain_caches(force: bool = False) -> None:
     p_th = R / "work/cached_terrain.png"
-    p_world = R / "work/cached_world_terrain.png"
     p_blue = R / "work/cached_world_terrain_blue_ocean.png"
     p_16k = R / "work/cached_world_terrain_16k_landbleed.png"
 
-    targets = [p_th, p_world, p_blue, p_16k]
+    targets = [p_th, p_blue, p_16k]
     if not force and all(p.exists() for p in targets):
         print("[4/5] All terrain caches under work/ already present.", flush=True)
         return
@@ -160,25 +159,21 @@ def build_terrain_caches(force: bool = False) -> None:
         th.close()
         print(f"      Saved {p_th.relative_to(R)} ({rw} crop)", flush=True)
 
-    if force or any(not p.exists() for p in (p_world, p_blue, p_16k)):
+    if force or any(not p.exists() for p in (p_blue, p_16k)):
         enhanced_16k = ImageEnhance.Brightness(ImageEnhance.Color(raw).enhance(1.25)).enhance(0.70)
         raw.close()
 
-        if force or not p_world.exists() or not p_blue.exists():
+        if force or not p_blue.exists():
             w8 = enhanced_16k.resize((8100, 4050), Image.Resampling.LANCZOS)
-            if force or not p_world.exists():
-                w8.save(p_world, optimize=False)
-                print(f"      Saved {p_world.relative_to(R)}", flush=True)
-            if force or not p_blue.exists():
-                land_8k = _rasterize_land_mask((8100, 4050), shp_path)
-                ocean_8k = Image.new("RGB", (8100, 4050), OCEAN_RGB)
-                blue_8k = Image.composite(w8, ocean_8k, land_8k)
-                blue_8k.save(p_blue, optimize=False)
-                blue_8k.close()
-                ocean_8k.close()
-                land_8k.close()
-                print(f"      Saved {p_blue.relative_to(R)}", flush=True)
+            land_8k = _rasterize_land_mask((8100, 4050), shp_path)
+            ocean_8k = Image.new("RGB", (8100, 4050), OCEAN_RGB)
+            blue_8k = Image.composite(w8, ocean_8k, land_8k)
+            blue_8k.save(p_blue, optimize=False)
+            blue_8k.close()
+            ocean_8k.close()
+            land_8k.close()
             w8.close()
+            print(f"      Saved {p_blue.relative_to(R)}", flush=True)
 
         if force or not p_16k.exists():
             land_16k = _rasterize_land_mask((rw, rh), shp_path)
